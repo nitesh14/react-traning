@@ -20,20 +20,29 @@
             <td height="400px" valign="top">
                 <div class="container">
                     <div>
-                        
+
+                        <div>
+                            <input type="text" placeholder="Project Id" id="projectId">
+                            <input type="text" placeholder="Name" id="name">
+                            <input type="text" placeholder="Description" id="description">
+                            <input type="text" placeholder="Status" id="status">
+                            <button onclick="handlers.addProject()">Add</button>
+                        </div>
+                        <br />
+                        <div>
+                            <button onclick="handlers.displayProjects()">Display Projects</button>
+                        </div>
                     </div>
 
                     <div id="sideInstruction">
-                        <p>Hover on Issue or [X] button to get the help</p>
-                        <p>Click on Issue or [X] button to change status or delete Issue</p>
 
                     </div>
                     <br />
                 </div>
                 <hr />
-                <ul>
-                   
-                </ul>
+                <table border="1" id="projectList">
+
+                </table>
 
             </td>
 
@@ -46,6 +55,8 @@
     <script type="text/javascript" src="js/object.js"></script>
     <script type="text/javascript" src="js/array.js"></script>
     <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/project.js"></script>
+    <script type="text/javascript" src="js/es6.js"></script>
 </body>
 
 </html>
